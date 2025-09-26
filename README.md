@@ -1,21 +1,33 @@
-# Luz Verde, Luz Roja
+# Luz Verde, Luz Roja — Arena Antropomorfa
 
-Este repositorio contiene un mini juego web inspirado en la prueba de "luz verde, luz roja".
+Este proyecto contiene un minijuego web inspirado en el reto "luz verde, luz roja" de *El juego del calamar*. Todo está contenido en un único archivo HTML listo para abrirse en cualquier navegador moderno.
 
-## Cómo ejecutar el juego
+## Ejecución rápida
 
 1. Clona o descarga este repositorio.
-2. Abre el archivo [`red_light_green_light_single_file_web_game_index.html`](./red_light_green_light_single_file_web_game_index.html) en tu navegador preferido.
-   - Puedes hacer doble clic sobre el archivo o arrastrarlo a una pestaña del navegador.
-   - Si prefieres usar un servidor local, en la carpeta del proyecto ejecuta `python3 -m http.server 8000` y navega a <http://localhost:8000/red_light_green_light_single_file_web_game_index.html>.
+2. Abre el archivo [`red_light_green_light_single_file_web_game_index.html`](./red_light_green_light_single_file_web_game_index.html).
+   - Puedes hacer doble clic sobre él o arrastrarlo a una pestaña de tu navegador.
+   - Opcionalmente levanta un servidor local con `python3 -m http.server 8000` y visita <http://localhost:8000/red_light_green_light_single_file_web_game_index.html>.
+
+## Características principales
+
+- Menú holográfico inicial con selección entre tres corredores antropomorfos: perro, gato y topo.
+- Carrera contra dos rivales IA con cuenta atrás de inicio, temporizador total y cambio de luz verde/roja aleatorio.
+- Capacidad de empujar a tus contrincantes cuando estén cerca para desequilibrarlos.
+- Diseño visual con pista futurista, muñeca vigilante reactiva y tablero de posiciones.
+- Controles pensados para teclado y pantallas táctiles.
 
 ## Controles
 
-- **Selecciona personaje:** en el menú inicial elige entre el perro, el gato o el topo y confirma para empezar la carrera.
-- **Avanzar:** mantén presionado `W` o `↑` (en dispositivos táctiles usa el botón “Mantener para avanzar”).
-- **Empujar:** cuando estés junto a otro corredor presiona `E`.
-- **Iniciar/Reiniciar:** utiliza los botones de la interfaz o la barra espaciadora para comenzar la partida.
+| Acción | Teclado | Pantalla táctil |
+| ------ | ------- | ---------------- |
+| Avanzar | `W` o `↑` | Botón "Avanzar" |
+| Cambiar de carril | `A`/`←` o `D`/`→` | Toca el lado izquierdo/derecho de la pista |
+| Empujar rival | Barra espaciadora | Botón "Empujar" |
+| Salir de la ronda | `Esc` | — |
+
+\* El toque corto en los laterales del lienzo cambia tu carril.
 
 ## Objetivo
 
-Llega a la meta antes de que el tiempo se agote y sin moverte durante la luz roja. Los rivales controlados por IA también compiten por el primer lugar, ¡no dejes que te ganen!
+Arranca solo cuando la muñeca muestre la luz verde, detente por completo con la luz roja y llega a la línea de meta antes de que el cronómetro llegue a cero. Si te mueves durante el rojo o el tiempo se agota, la ronda termina. ¡Elimina a tus rivales con empujes estratégicos y consigue la victoria!
